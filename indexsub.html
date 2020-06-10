@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blocks</title>
+  <!-- Do not change this file - add your CSS styling
+       rules to the blocks.css file included below -->
+  <link type="text/css" rel="stylesheet" href="blocksub.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<a href="#" onclick="$('#centretext').css('background-color', 'green');return false;">Click me!</a>
+<a href="#" onclick="$('#centretext').css('background-color', 'red');return false;">Click me!</a>
+<a href="#" onclick="$('#centretext').css('background-color', 'blue');return false;">Click me!</a>
+<a href="#" onclick="$('#centretext').css('background-color', 'orange');return false;">Click me!</a>
+<a href="#" onclick="$('#centretext').css('background-color', 'brown');return false;">Click me!</a>
+<a href="#" onclick="$('#centretext').css('background-color', 'pink');return false;">Click me!</a>
+<p id="centretext">
+  <b><span id="changein">Welcome to the Console! Wow you are great! You found the message!!! Let me know if you found this on whatsapp(9372232061)</span></b>
+</p>
+
+<div id="one">
+Turns out you have a really fun time if you
+go to work every day and focus on being
+silly and funny and happy! - Hannah Murray
+</div>
+<div id="two">
+All you need in this life is ignorance and confidence,
+and then success is sure. - Mark Twain
+</div>
+<div id="three">
+Well, if crime fighters fight crime and fire fighters
+fight fire, what do freedom fighters fight? They never
+mention that part to us, do they? - George Carlin
+</div>
+<div id="four">
+Great minds discuss ideas; average minds discuss events;
+small minds discuss people. - Eleanor Roosevelt
+</div>
+<script type="text/javascript">
+  data = document.getElementById('changein').innerHTML;
+  window.console && console.log(data);
+  alert("This page is full of quotes!");
+  document.getElementById("changein").innerHTML = "Open Developer's Console and Refresh to see a previously written secret message here";
+  window.console && console.log(document.getElementById("changein"));
+</script>
+</body>
+</html>
